@@ -1,0 +1,221 @@
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+html{
+    height: 100%;
+}
+body {
+    min-width: 370px;
+	background-color: black;
+	min-height: 100%;
+	display: grid;
+ 	grid-template-rows: auto 1fr auto;
+}
+
+body {
+    background: repeating-linear-gradient(#C8E6C9, #E8F5E9, #C8E6C9 100%);
+}
+
+
+/*header*/
+my-header{
+    background-color: #333; 
+    overflow: hidden;
+}
+my-header a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+    }
+
+    my-header .icon {
+    display: none;
+    }
+
+/* Выпадающий контейнер - необходим для размещения выпадающего содержимого */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    }
+    
+    /* Стиль кнопки выпадающего списка, чтобы соответствовать внутри верхней навигации */
+    .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+    
+    /* Стиль раскрывающегося списка (по умолчанию скрыт) */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+    /* Стиль ссылки внутри выпадающего списка */
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+/* Добавить темный фон на верхних навигационных ссылках и выпадающая кнопка при наведении курсора */
+my-header a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+    }
+    
+    /* Добавить серый фон для выпадающих ссылок при наведении курсора */
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    /* Отображение выпадающего меню при наведении курсора мыши на кнопку раскрывающегося списка */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }  
+    @media screen and (max-width: 768px){
+    header a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+        }
+    header a.icon {
+    float: right;
+    display: block;
+    }
+    header.responsive {position: relative;}
+    header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+    header.responsive .dropdown {float: none;}
+    header.responsive .dropdown-content {position: relative;}
+    header.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    }
+}
+.my-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+     width: 80%; 
+    /*width: 1000px;*/
+    position: relative;
+    display: flex;
+    justify-content:center    ;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.hidden {
+    opacity: 0;
+}
+.float-left {
+    /* float: left; */
+    margin: 0 15px 15px 0;
+}
+
+.float-right {
+    /* float: right; */
+    margin: 0 0 15px 15px;
+}
+
+.section {
+    position: relative;
+    max-width: 450px;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    /* clear: both;
+    margin-bottom: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease; */
+}
+.container .section .imgBx{
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+.container .section .imgBx img{
+    max-width: 100%;
+}
+
+.container .section .content{
+    margin-left: 20px;
+}
+@media (max-width:991px){
+    .container{
+        flex-direction: column;
+    }
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .container .section{
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .container .section .imgBx{
+        max-width: 100%;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+/*footer*/
+my-footer{
+    width: 100%;
+    height: auto;
+    background: #333;
+    margin:  0 auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+}
+my-footer .social img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+my-footer .social img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

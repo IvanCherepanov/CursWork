@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="/CursWork//scripts/script.js"></script>
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header id="myTopnav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="comets.html">Кометы</a>
+        <div class="dropdown">
+            <button class="dropbtn">Главные объекты<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="sun.html">Солнце</a>
+                <a href="mercury.html">Меркирий</a>
+                <a href="venus.html">Венера</a>
+                <a href="earth.html">Земля </a>
+                <a href="mars.html">Марс</a>
+                <a href="jupiter.html">Юпитер</a>
+                <a href="saturn.html">Сатурн</a>
+                <a href="uranus.html">Уран</a>
+                <a href="neptune.html">Нептун</a>
+            </div>
+        </div>
+        <a href="scientists.html">Ученые</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </header>
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/CursWork/resources/images/slyder1/asteroid.jpg" style="width:100%; max-height: 600px">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/CursWork/resources/images/slyder1/comets.jpg" style="width:100%; max-height: 600px">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/CursWork/resources/images/slyder1/solar_windjpg.jpg" style="width:100%; max-height: 600px">
+          <div class="text">Caption Three</div>
+        </div>
+      
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div  style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <script>
+      var slideIndex = 0;
+        showSlides();
+    </script>
+
+    <div class="information">
+        <h3 class="inf_title"><strong>Солнечная система</strong></h3>
+        <!-- Text -->
+        <p class="inf_text">Солнечная система — планетная система, включает в себя центральную звезду — Солнце — и все естественные космические объекты, вращающиеся вокруг Солнца. Она сформировалась путём гравитационного сжатия газопылевого облака примерно 4,57 млрд лет назад</p>
+        <p class="inf_text">Центральным объектом Солнечной системы является Солнце — звезда главной последовательности спектрального класса G2V, жёлтый карлик. В Солнце сосредоточена подавляющая часть всей массы системы (около 99,866 %), оно удерживает своим тяготением планеты и прочие тела, принадлежащие к Солнечной системе</p>
+        <p class="inf_text">Большинство крупных объектов, обращающихся вокруг Солнца, движутся практически в одной плоскости, называемой плоскостью эклиптики. В то же время кометы и объекты пояса Койпера часто обладают большими углами наклона к этой плоскости</p>
+        <p class="inf_text">Все планеты и большинство других объектов обращаются вокруг Солнца в одном направлении с вращением Солнца (против часовой стрелки, если смотреть со стороны северного полюса Солнца). Есть исключения, такие как комета Галлея. Самой большой угловой скоростью обладает Меркурий — он успевает совершить полный оборот вокруг Солнца всего за 88 земных суток. А для самой удалённой планеты — Нептуна — период обращения составляет 165 земных лет.</p>
+        <p class="inf_text">Многие модели Солнечной системы условно показывают орбиты планет через равные промежутки, однако в действительности, за малым исключением, чем дальше планета или пояс от Солнца, тем больше расстояние между её орбитой и орбитой предыдущего объекта</p>
+        <p class="inf_text">Большинство планет Солнечной системы обладают собственными подчинёнными системами. Многие окружены спутниками, некоторые из спутников по размеру превосходят Меркурий. Большинство крупных спутников находятся в синхронном вращении, одна их сторона постоянно обращена к планете.</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="cards_wrap">
+            <!-- One card -->
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="sun_card"></div>
+                    <h5 class="card-title">Солнце</h5>
+                    <p class="card-text">Одна из звёзд Млечного Пути и единственная звезда Солнечной системы. Вокруг Солнца обращаются другие объекты этой системы: планеты, астероиды.</p>
+                    <a href="sun.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="merc_card"></div>
+                    <h5 class="card-title">Меркурий</h5>
+                    <p class="card-text">Ближайшая к Солнцу планета Солнечной системы, наименьшая из планет земной группы. Названа в честь древнеримского бога торговли — быстрого Меркурия. </p>
+                    <a href="mercury.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="ven_card"></div>
+                    <h5 class="card-title">Венера</h5>
+                    <p class="card-text">Принадлежит к семейству планет земной группы. Названа в честь древнеримской богини любви Венеры</p>
+                    <a href="venus.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="earth_card"></div>
+                    <h5 class="card-title">Земля</h5>
+                    <p class="card-text"> Самая плотная, пятая по диаметру и массе среди всех планет и крупнейшая среди планет земной группы</p>
+                    <a href="earth.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="mars_card"></div>
+                    <h5 class="card-title">Марс</h5>
+                    <p class="card-text"> Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу.</p>
+                    <a href="mars.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="jup_card"></div>
+                    <h5 class="card-title">Юпитер</h5>
+                    <p class="card-text">Крупнейшая планета Солнечной системы. Классифицируется как газовый гигант.</p>
+                    <a href="jupiter.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="sat_card"></div>
+                    <h5 class="card-title">Сатурн</h5>
+                    <p class="card-text">Газовая планета-гигант. Сатурн назван в честь римского бога земледелия. </p>
+                    <a href="saturn.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="yran_card"></div>
+                    <h5 class="card-title">Уран</h5>
+                    <p class="card-text">Была открыта в 1781 году английским астрономом Уильямом Гершелем при помощи телескопа и названа в честь греческого бога неба Урана.
+                        </p>
+                    <a href="uranus.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_planet">
+                <div class="card_inner">
+                    <div class="image" id="nep_card"></div>
+                    <h5 class="card-title">Нептун</h5>
+                    <p class="card-text">Восьмая и самая дальняя от Солнца планета Солнечной системы.  Планета названа в честь Нептуна — римского бога морей</p>
+                    <a href="neptune.html" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/IvanCherepanov" target="_blank"><img src="resources/social/GitHub-Mark-Light-32px.png"></a>
+            <a href="mailto:iv.cherenov8@yandex.ru" target="_blank"><img src="resources/social/em.png"></a>
+            <a href="https://vk.com/id120160951" target="_blank"><img src="resources/social/vk.png"></a>
+        </div>
+        <p>Курсовая работа 2021</p>
+    </footer>
+    
+</html>
