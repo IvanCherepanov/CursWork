@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement{
         <a href="gallery.html">Галерея</a>
         <a href="comets.html">Кометы</a>
         <div class="dropdown">
-            <button class="dropbtn">Планеты<i class="fa fa-caret-down"></i></button>
+            <button class="dropbtn">Главные объекты</button>
             <div class="dropdown-content">
                 <a href="sun.html">Солнце</a>
                 <a href="mercury.html">Меркурий</a>

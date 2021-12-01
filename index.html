@@ -9,12 +9,13 @@
     <title>Солнечная система</title>
 </head>
 <body>
+                                                <!--Заголовок-->
     <header id="myTopnav">
         <a href="index.html" class="active">Главная</a>
         <a href="gallery.html">Галерея</a>
         <a href="comets.html">Кометы</a>
         <div class="dropdown">
-            <button class="dropbtn">Главные объекты<i class="fa fa-caret-down"></i></button>
+            <button class="dropbtn">Главные объекты</button>
             <div class="dropdown-content">
                 <a href="sun.html">Солнце</a>
                 <a href="mercury.html">Меркирий</a>
@@ -31,32 +32,40 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </header>
 
+                                                 <!-- Слайдер -->
     <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
+        <!-- Изобржаения с текстом -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext">1 / 4</div>
           <img src="/CursWork/resources/images/slyder1/asteroid.jpg" style="width:100%; max-height: 600px">
-          <div class="text">Caption Text</div>
+          <div class="text">Астероиды</div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+          <div class="numbertext">2 / 4</div>
           <img src="/CursWork/resources/images/slyder1/comets.jpg" style="width:100%; max-height: 600px">
-          <div class="text">Caption Two</div>
+          <div class="text">Кометы</div>
         </div>
       
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+          <div class="numbertext">3 / 4</div>
           <img src="/CursWork/resources/images/slyder1/solar_windjpg.jpg" style="width:100%; max-height: 600px">
-          <div class="text">Caption Three</div>
+          <div class="text">Солнце</div>
         </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="/CursWork/resources/images/slyder1/all.jpg" style="width:100%; max-height: 600px">
+            <div class="text">Система</div>
+          </div>
       
       </div>
       <br>
       
-      <!-- The dots/circles -->
+      <!-- Tочки-->
       <div  style="text-align:center">
+        <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -65,10 +74,10 @@
       var slideIndex = 0;
         showSlides();
     </script>
-
+                                                        <!-- Текстовая информация -->
     <div class="information">
         <h3 class="inf_title"><strong>Солнечная система</strong></h3>
-        <!-- Text -->
+        <!-- Текст -->
         <p class="inf_text">Солнечная система — планетная система, включает в себя центральную звезду — Солнце — и все естественные космические объекты, вращающиеся вокруг Солнца. Она сформировалась путём гравитационного сжатия газопылевого облака примерно 4,57 млрд лет назад</p>
         <p class="inf_text">Центральным объектом Солнечной системы является Солнце — звезда главной последовательности спектрального класса G2V, жёлтый карлик. В Солнце сосредоточена подавляющая часть всей массы системы (около 99,866 %), оно удерживает своим тяготением планеты и прочие тела, принадлежащие к Солнечной системе</p>
         <p class="inf_text">Большинство крупных объектов, обращающихся вокруг Солнца, движутся практически в одной плоскости, называемой плоскостью эклиптики. В то же время кометы и объекты пояса Койпера часто обладают большими углами наклона к этой плоскости</p>
@@ -77,9 +86,11 @@
         <p class="inf_text">Большинство планет Солнечной системы обладают собственными подчинёнными системами. Многие окружены спутниками, некоторые из спутников по размеру превосходят Меркурий. Большинство крупных спутников находятся в синхронном вращении, одна их сторона постоянно обращена к планете.</p>
     </div>
 
+
+                                                        <!-- Блок с карточками -->
     <div class="wrapper">
         <div class="cards_wrap">
-            <!-- One card -->
+            <!-- одна карточка -->
             <div class="card_planet">
                 <div class="card_inner">
                     <div class="image" id="sun_card"></div>
@@ -155,7 +166,7 @@
             </div>
         </div>
     </div>
-
+                                                    <!-- Footer(подвал) -->
     <footer>
         <div class="social">
             <a href="https://github.com/IvanCherepanov" target="_blank"><img src="resources/social/GitHub-Mark-Light-32px.png"></a>

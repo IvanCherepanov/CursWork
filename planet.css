@@ -121,17 +121,19 @@ my-header a:hover, .dropdown:hover .dropbtn {
 }
                                                 /*image*/
 .responsive {
-    width: 100%;
-    height:auto;
-    }
-    .responsive2 {
-        width: 100%;
-        height:auto;
-        max-height: 50vh;
-        }
+width: 100%;
+height:auto;
+}
+.responsive2 {
+	width: 100%;
+	height:auto;
+	max-height: 50vh;
+	}
 											  /*ТЕКСТ*/
 .information{
 	background-color: black;
+	margin: auto;
+	max-width: 1000px;
 }					
 .information h3{
 	color: white;
