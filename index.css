@@ -291,7 +291,8 @@ to {opacity: 1}
 	margin-bottom: 20px;
     padding: 24px 36px;
     border-radius: 5px;
-    background: rgb(42, 52, 190);
+    background: #4CAF50;
+	text-transform: uppercase;
     align-items: center;
     justify-content: center;
 	color: white;

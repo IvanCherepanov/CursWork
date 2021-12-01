@@ -21,7 +21,7 @@ body {
 }
 
 
-/*header*/
+                                                /*header*/
 my-header{
     background-color: #333; 
     overflow: hidden;
@@ -124,6 +124,8 @@ my-header a:hover, .dropdown:hover .dropbtn {
     text-align: left;
     }
 }
+
+                            /*Тело*/
 .my-body{
     display: flex;
     justify-content: center;
@@ -162,11 +164,6 @@ my-header a:hover, .dropdown:hover .dropbtn {
     margin: 10px;
     padding: 15px;
     display: flex;
-    /* clear: both;
-    margin-bottom: 30px;
-    display: block;
-    opacity: 1;
-    transition: opacity 2s ease; */
 }
 .container .section .imgBx{
     max-width: 150px;
@@ -200,7 +197,7 @@ my-header a:hover, .dropdown:hover .dropbtn {
 .hidden {
     opacity: 0;
 }
-/*footer*/
+                                                /*footer*/
 my-footer{
     width: 100%;
     height: auto;
