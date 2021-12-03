@@ -1,42 +1,41 @@
 window.onload = function() {
-const sear = document.querySelector(".mybtn");
-//console.log(sear);
-function myFunctionF() {
-    
-  // Объявить переменные
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("mySearch");
-  filter = input.value.toUpperCase();
-
-  ul = document.getElementById("myTopnav");
-  li = ul.querySelectorAll("a");
-  let flag=false;
-    
-  // Прокрутите все элементы списка и скройте те, которые не соответствуют поисковому запросу
-  for (i = 0; i < li.length; i++) {
-    a = li[i].href;
-    let result = a.match(/\w+\.html+$/);
-    if (result){
-    let answer=result[0].slice(0, -5);
-    //console.log(a);
-    console.log(result[0].slice(0, -5));
-    console.log(a, answer,filter);
-    if (answer.toUpperCase()===filter) {
-      //alert("Найдено");
-      window.location.href=a;
-      flag=true;
-      break;
-    } }
+  const sear = document.querySelector(".mybtn");
+  const arr = {
+    солнце: 'sun.html',
+    меркурий: 'mercury.html',
+    венера: 'venus.html',
+    земля: 'earth.html',
+    марс: 'mars.html',
+    юпитер: 'jupiter.html',
+    сатурн: 'saturn.html',
+    уран: 'uranus.html',
+    нептун: 'neptune.html',
+    гелерея: 'gallery.html',
+    кометы: 'comets.html',
+    ученые: 'scientists.html',
+    главная: 'index.html'
+  };
+  //console.log(sear);
+  function myFunctionF() {
+    console.log(1);
+    // Объявить переменные
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toLowerCase();
+    // Прокрутите все элементы списка и скройте те, которые не соответствуют поисковому запросу
+    if (filter in arr){
+      console.log(2);
+      window.location.href=arr[filter];
+      
+    }
+    else{
+      alert("Not found");
+    }
   }
-  if (flag==false){
-      alert("not found");
-  }
-}
-
-if (sear){
-sear.addEventListener("click", e=>{
-    e.preventDefault();
-    myFunctionF();
-  });
-  }
+  if (sear){
+    sear.addEventListener("click", e=>{
+        e.preventDefault();
+        myFunctionF();
+      });
+      }
 }

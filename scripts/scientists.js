@@ -1,4 +1,4 @@
-window.onload = function() {
+
 
 function isVisible(element) {
     let elementBox = element.getBoundingClientRect();
@@ -21,4 +21,3 @@ function scanDocument() {
 
 document.addEventListener("scroll", scanDocument);
 
-}

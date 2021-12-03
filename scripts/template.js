@@ -9,7 +9,7 @@ class MyHeader extends HTMLElement{
             <button class="dropbtn">Главные объекты</button>
             <div class="dropdown-content" id="myMenu">
                 <a href="sun.html">Солнце</a>
-                <a href="mercury.html">Меркирий</a>
+                <a href="mercury.html">Меркурий</a>
                 <a href="venus.html">Венера</a>
                 <a href="earth.html">Земля </a>
                 <a href="mars.html">Марс</a>
