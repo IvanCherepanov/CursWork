@@ -1,4 +1,5 @@
 window.onload = function() {
+  
   const sear = document.querySelector(".mybtn");
   const arr = {
     солнце: 'sun.html',
