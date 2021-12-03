@@ -7,11 +7,11 @@ class MyHeader extends HTMLElement{
         <a href="comets.html">Кометы</a>
         <div class="dropdown">
             <button class="dropbtn">Главные объекты</button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myMenu">
                 <a href="sun.html">Солнце</a>
-                <a href="mercury.html">Меркурий</a>
+                <a href="mercury.html">Меркирий</a>
                 <a href="venus.html">Венера</a>
-                <a href="earth.html">Земля</a>
+                <a href="earth.html">Земля </a>
                 <a href="mars.html">Марс</a>
                 <a href="jupiter.html">Юпитер</a>
                 <a href="saturn.html">Сатурн</a>
@@ -20,6 +20,12 @@ class MyHeader extends HTMLElement{
             </div>
         </div>
         <a href="scientists.html">Ученые</a>
+        <div class="search-container">
+            <form >
+              <input type="text" placeholder="Поиск.." name="search" id="mySearch">
+              <button type="submit" class="mybtn">></button>
+            </form>
+          </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </header>
     

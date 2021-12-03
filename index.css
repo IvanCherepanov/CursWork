@@ -94,6 +94,34 @@ header a:hover, .dropdown:hover .dropbtn {
   .dropdown:hover .dropdown-content {
 	display: block;
   }  
+  		/*поиск обрабатываем*/	
+  .search-container {
+	float: right;
+	padding: 5px 16px;
+  }
+  .search-container input[type=text] {
+	padding:7px;
+	font-size: 17px;
+	border: none;
+  }
+  
+   .search-container button {
+	float: right;
+	padding-top:7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .header .search-container button:hover {
+	background: #ccc;
+  }
+  
   											/*sluder*/
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -308,11 +336,11 @@ to {opacity: 1}
 		width: 48%;
 	}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 875px){
 	.cards_wrap .card_planet{
 		width: 100%;
 	}
-	header a:not(:first-child), .dropdown .dropbtn {
+	header a:not(:first-child), .dropdown .dropbtn, .search-container  {
 		display: none;
 	  }
 	  header a.icon {
@@ -332,11 +360,17 @@ to {opacity: 1}
 	}
 	header.responsive .dropdown {float: none;}
 	header.responsive .dropdown-content {position: relative;}
-	header.responsive .dropdown .dropbtn {
+	header.responsive .dropdown .dropbtn
+	 {
 	display: block;
 	width: 100%;
 	text-align: left;
 	}
+	header.responsive .search-container{
+		display: block;
+		float: left;
+	}
+	
 }
 									/*FOOTER*/
 footer{
