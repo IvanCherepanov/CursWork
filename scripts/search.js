@@ -16,21 +16,16 @@ window.onload = function() {
     ученые: 'scientists.html',
     главная: 'index.html'
   };
-  //console.log(sear);
   function myFunctionF() {
-    console.log(1);
-    // Объявить переменные
     var input, filter, ul, li, a, i;
     input = document.getElementById("mySearch");
     filter = input.value.toLowerCase();
-    // Прокрутите все элементы списка и скройте те, которые не соответствуют поисковому запросу
     if (filter in arr){
-      console.log(2);
       window.location.href=arr[filter];
       
     }
     else{
-      alert("Not found");
+      alert("Страница не найдена");
     }
   }
   if (sear){

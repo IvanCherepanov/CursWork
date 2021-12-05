@@ -185,7 +185,6 @@ float: left;
 
 /*друг за другом идут*/
 @media screen and (max-width: 600px){
-
     .row{
         background-color:violet;
     }
